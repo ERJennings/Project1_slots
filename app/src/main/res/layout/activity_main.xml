@@ -11,8 +11,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="163dp"
-        android:layout_height="27dp"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:lines="3"
         android:text="@string/match"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,18 +36,64 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024" />
 
-    <Button
-        android:id="@+id/button"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="112dp"
-        android:layout_marginTop="257dp"
+        android:layout_marginTop="250dp"
         android:layout_marginEnd="112dp"
-        android:layout_marginBottom="225dp"
-        android:background="@drawable/go"
+        android:layout_marginBottom="232dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/go" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="137dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="85dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/reset1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="141dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/dol"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="576dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="129dp"
+        android:layout_height="136dp"
+        app:srcCompat="@drawable/f1"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="144dp"
+        android:layout_height="134dp"
+        app:srcCompat="@drawable/f2"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="132dp"
+        app:srcCompat="@drawable/f3"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="114dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

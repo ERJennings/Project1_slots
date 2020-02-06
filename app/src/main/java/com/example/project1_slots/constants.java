@@ -8,7 +8,7 @@ package com.example.project1_slots;
  */
 public class constants {
 
-    //don't allow instantiation
+    //don't allow instantiation+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     private constants() {
     }
 

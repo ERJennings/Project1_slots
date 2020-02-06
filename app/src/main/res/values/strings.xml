@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Project1_slots</string>
     <string name="play">$1 a Play</string>
-    <string name="match">Match 0 - Lose $1</string>
+    <string name="match">Match 0 - Lose $1 Match 2 - Win $2 Match 3 - Win $3</string>
 </resources>
