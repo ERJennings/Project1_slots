@@ -44,6 +44,7 @@
         android:layout_marginTop="250dp"
         android:layout_marginEnd="112dp"
         android:layout_marginBottom="232dp"
+        android:contentDescription="@string/go"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -58,6 +59,7 @@
         android:layout_height="147dp"
         android:layout_marginStart="280dp"
         android:layout_marginTop="85dp"
+        android:contentDescription="@string/reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,32 +70,58 @@
         android:id="@+id/imageView3"
         android:layout_width="141dp"
         android:layout_height="155dp"
-        app:srcCompat="@drawable/dol"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="576dp" />
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="136dp"
+        android:contentDescription="@string/money"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/dol" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="129dp"
         android:layout_height="136dp"
-        app:srcCompat="@drawable/f1"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="110dp" />
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="89dp"
+        android:contentDescription="@string/flower1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/f1" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="144dp"
         android:layout_height="134dp"
-        app:srcCompat="@drawable/f2"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="114dp" />
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="87dp"
+        android:contentDescription="@string/flower2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/f2" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="120dp"
         android:layout_height="132dp"
-        app:srcCompat="@drawable/f3"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="114dp" />
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="88dp"
+        android:contentDescription="@string/flower3"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/f3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

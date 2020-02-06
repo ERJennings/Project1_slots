@@ -2,4 +2,10 @@
     <string name="app_name">Project1_slots</string>
     <string name="play">$1 a Play</string>
     <string name="match">Match 0 - Lose $1 Match 2 - Win $2 Match 3 - Win $3</string>
+    <string name="go">Go</string>
+    <string name="reset">Reset</string>
+    <string name="money">Money</string>
+    <string name="flower1">Flower 1</string>
+    <string name="flower2">Flower 2</string>
+    <string name="flower3">Flower 3</string>
 </resources>
