@@ -8,4 +8,6 @@
     <string name="flower1">Flower 1</string>
     <string name="flower2">Flower 2</string>
     <string name="flower3">Flower 3</string>
+    <string name="amount">$5</string>
+
 </resources>
