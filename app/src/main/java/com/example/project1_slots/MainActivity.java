@@ -15,7 +15,9 @@ public class MainActivity extends AppCompatActivity implements Animation.Animati
     private int count;
 
     //private Animation animRotate1;
-    private ImageView myView;
+    //private ImageView myView;
+
+    private ImageView resetView;
     private ImageView goView;
     private int flowermatch1;
     private int flowermatch2;
@@ -26,8 +28,10 @@ public class MainActivity extends AppCompatActivity implements Animation.Animati
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         count = 5;
+        resetView = findViewById(R.id.imageView2);
+        resetView.setVisibility(View.INVISIBLE);
 
-        myView = findViewById(R.id.imageView4);
+        //myView = findViewById(R.id.imageView4);
 
         //animRotate1 = AnimationUtils.loadAnimation(getApplicationContext(),
                 //R.anim.rotate);
@@ -38,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements Animation.Animati
         count = constants.STARTUP_CASH;
         TextView newtext = findViewById(R.id.textView4);
         newtext.setText("$" + count);
+        goView = findViewById(R.id.imageView);
+        goView.setVisibility(View.VISIBLE);
+        resetView = findViewById(R.id.imageView2);
+        resetView.setVisibility(View.INVISIBLE);
 
     }
 
@@ -65,8 +73,12 @@ public class MainActivity extends AppCompatActivity implements Animation.Animati
         newtext.setText("$" + count);
 
         if (count == constants.YOUR_BROKE) {
-
+            goView = findViewById(R.id.imageView);
+            goView.setVisibility(View.INVISIBLE);
         }
+
+        resetView = findViewById(R.id.imageView2);
+        resetView.setVisibility(View.VISIBLE);
 
 
     }
@@ -83,10 +95,10 @@ public class MainActivity extends AppCompatActivity implements Animation.Animati
 
     private int numMatches(int a, int b, int c) {
         if  ((a == b) && (a == c)){
-            return 3;
+            return constants.MATCH_3;
         }
         else if ((a == b) || (b == c) || (a == c)) {
-            return 2;
+            return constants.MATCH_2;
         }
         else {
             return 0;
